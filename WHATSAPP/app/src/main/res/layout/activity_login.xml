@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginActivity"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="422dp"
+        android:layout_height="195dp"
+        android:padding="4dp"
+        android:scaleType="fitCenter"
+
+        android:src="@drawable/nature1" />
+
+            <EditText
+                android:id="@+id/mobile"
+                android:hint="Mobile NO"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:adjustViewBounds="true"
+                android:layout_alignParentLeft="true"
+                android:padding="4dp"
+                android:drawableStart="@drawable/phone"
+                android:drawableLeft="@drawable/phone"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                />
+
+            <Button
+                android:id="@+id/sendOTP"
+                android:layout_width="match_parent"
+                android:text="SEND OTP"
+                android:padding="4dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/otpEntry"
+                android:hint="ENTER OTP"
+                android:padding="4dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+
+                />
+
+
+    <Button
+        android:id="@+id/verifyNumber"
+        android:layout_width="365dp"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="17dp"
+        android:gravity="end"
+        android:onClick="verifyMobileNum"
+        android:padding="4dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="Verify Mobile"
+        android:textAlignment="center"
+        android:textSize="27dp"
+        android:textStyle="bold"
+
+
+        />
+
+
+        </LinearLayout>
+
+
+</ScrollView>

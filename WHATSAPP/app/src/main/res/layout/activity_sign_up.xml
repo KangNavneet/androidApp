@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".signUp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+        <ImageView
+            android:layout_width="500dp"
+            android:layout_height="198dp"
+            android:layout_gravity="center"
+            android:padding="4dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/nature1" />
+
+
+
+        <EditText
+            android:id="@+id/signName"
+            android:hint="FULL NAME"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="4dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            />
+
+        <EditText
+            android:id="@+id/signEmail"
+            android:hint="EMAIL ID"
+            android:layout_width="match_parent"
+            android:padding="4dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            />
+
+        <EditText
+            android:id="@+id/signStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="17dp"
+            android:hint="TYPE STATUS"
+            android:padding="4dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GALLERY"
+            android:id="@+id/signSelectImageGallery"
+            android:onClick="selectImageGallery"
+            />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CAMERA"
+        android:id="@+id/signSelectImageCamera"
+        android:onClick="selectImageCamera"
+        />
+
+        <ImageView
+            android:id="@+id/signSetImage"
+            android:layout_width="185dp"
+            android:outlineAmbientShadowColor="@color/colorPrimary"
+            android:layout_height="100dp"
+            android:layout_gravity="center" />
+
+
+        <Button
+            android:id="@+id/signUpBtn"
+            android:layout_width="367dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="19dp"
+            android:background="#4CAF50"
+            android:text="SIGN UP"
+            android:textSize="24sp"
+            />
+
+        <ProgressBar
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mProgressBar"
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>
